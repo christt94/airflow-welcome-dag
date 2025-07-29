@@ -1,0 +1,14 @@
+# Ignore virtual environments
+venv/
+__pycache__/
+
+# Airflow logs and configs
+airflow_home/
+logs/
+*.db
+.env
+.env.*
+
+# Docker volumes
+*.pid
+docker-compose.override.yml

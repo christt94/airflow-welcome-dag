@@ -1,0 +1,13 @@
+services:
+  sleek-airflow:
+    build:
+      context: .  # ← assumes Dockerfile is in the current folder
+    image: sleek-airflow:latest
+    
+    volumes:
+      - ./airflow:/opt/airflow
+
+    ports:
+      - "8080:8080"
+
+    command: airflow standalone
